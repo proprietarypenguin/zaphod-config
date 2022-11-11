@@ -19,15 +19,15 @@
 #define MED_L 5
 #define FUN_L 6
 
-/ { 
-    conditional_layers {
-    	compatible = "zmk,conditional-layers";
-	tri_layer {
-		if-layers = <1 2>;
-		then-layer = <3>;
-		};
-    	};
-};
+// / { 
+//    conditional_layers {
+//    	compatible = "zmk,conditional-layers";
+//	tri_layer {
+//		if-layers = <1 2>;
+//		then-layer = <3>;
+//		};
+//    	};
+// };
 
 &mt {
     tapping-term-ms = <250>;
@@ -73,7 +73,7 @@
             label = "Base";
             bindings = <
                 &kp Q      &kp W      &kp E       &kp R          &kp T         &kp Y            &kp U          &kp I       &kp O      &kp P
-                &hm LGUI A &hm LALT S &hm LCTRL D &hm LSHFT F    &kp G         &kp H            &hm RSHFT J    &hm RCTRL K &hm LALT L &hm LGUI SEMI
+                &hm LGUI A &hm LALT S &hm LSHFT D &hm LCTRL F    &kp G         &kp H            &hm RCTRL J    &hm RSHFT K &hm LALT L &hm LGUI SEMI
                 &kp Z      &kp X      &kp C       &kp V          &kp B         &kp N            &kp M          &kp COMMA   &kp DOT    &kp FSLH
                                                   &lt SYM_L TAB  &lt BLU_L RET &lt NUM_L SPACE  &lt NAV_L BKSP
             >;
