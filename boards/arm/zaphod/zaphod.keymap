@@ -52,6 +52,18 @@
             bindings = <&mo MED_L>;
         };
 
+	combo-capsword {
+	    timeout-ms = <50>;
+	    key-positions = <20 21 22>;
+	    bindings = <&caps_word>;
+	};
+
+	combo-apos {
+	    timeout-ms = <50>;
+	    key-positions = <18 19>;
+	    bindings = <&kp APOS>;
+	};
+
     };
 
     behaviors {
